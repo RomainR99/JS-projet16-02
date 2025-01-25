@@ -1,0 +1,23 @@
+body{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: auto; /*mieux que flex pour le responsive sinon body prend que clock*/
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container{
+    backdrop-filter: blur(50px); /*rend flou et bien moche*/
+    width: 100vw;
+
+}
+
+.clock{
+ color:black;
+ font-size: 10rem;
+ font-weight: bold;
+ text-align: center;
+ font-family: monospace;
+}
