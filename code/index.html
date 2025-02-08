@@ -1,13 +1,60 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProjetReact-JS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BProjetReact-JS</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin: 50px;
+        }
+        #blague {
+            font-size: 5em;
+            background-color: #0300c1;
+            color: white;
+            padding: 20px;
+            display: inline-block;
+
+        }
+        .punchline {
+            visibility: hidden;
+            color: #d35400;
+            font-weight: bold;
+        }
+        #blague:hover .punchline {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+    <h1>Blague du jour</h1>
+    <div id="blague"></div>
+    <script type="text/javascript" src="./src/Blague.js"></script>
+    
+    <h1>Evènement historique du jour</h1>
+    <div id="historic_event"></div>
+    <script type="text/javascript" src="./src/HistoricEvent.js"></script>
+
+    <h1>Mocktail du jour</h1>
+    <div id="mocktail"></div>
+    <script type="text/javascript" src="./src/Mocktail.js"></script>
+
+    <h1>Recette du jour</h1>
+    <div id="recette"></div>
+    <dialog id="modal-recette">
+        <div id="modal-content"></div>
+        <button id="fermer-modal">Fermer</button>
+    </dialog>
+    <script type="text/javascript" src="./src/Recette.js"></script>
+    
+
+
+</body>
 </html>
